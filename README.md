@@ -1,7 +1,7 @@
 DATA 622 # hw2
 
-	Assigned on September 27, 2017
-	Due on October 17, 2017 11:59 PM EST
+	Assigned on September 27, 2018
+	Due on October 17, 2018 11:59 PM EST
 15 points possible, worth 15% of your final grade
 
 Required Reading
