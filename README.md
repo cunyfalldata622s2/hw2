@@ -19,6 +19,7 @@ The homework will be scored based on code efficiency (hint: use functions, not s
 Instructions:
 
 Submit the following 5 items on github.
+
 ReadMe.md (see "Critical Thinking")
 requirements.txt
 pull_data.py
@@ -27,9 +28,7 @@ score_model.py
 
 More details:
 requirements.txt (1 point)
-This file documents all dependencies needed on top of the existing packages in the Docker Dataquest image from HW1. When called upon using pip install -r requirements.txt , this will install all python packages needed to run the .py files. (hint: use pip freeze to 
-
-generate the .txt file)
+This file documents all dependencies needed on top of the existing packages in the Docker Dataquest image from HW1. When called upon using pip install -r requirements.txt , this will install all python packages needed to run the .py files. (hint: use pip freeze to generate the .txt file)
 
 pull_data.py (5 points)
 When this is called using python pull_data.py in the command line, this will go to the 2 Kaggle urls provided below, authenticate using your own Kaggle sign on, pull the two datasets, and save as .csv files in the current local directory. The authentication login details (aka secrets) need to be in a hidden folder (hint: use .gitignore). There must be a data check step to ensure the data has been pulled correctly and clear commenting and documentation for each step inside the .py file.
