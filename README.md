@@ -19,15 +19,10 @@ DATA 622 # hw2
 Instructions:
 
 	Submit the following 5 items on github.
-
 	ReadMe.md (see "Critical Thinking")
-
 	requirements.txt
-
 	pull_data.py
-
 	train_model.py
-
 	score_model.py
 
 More details:
