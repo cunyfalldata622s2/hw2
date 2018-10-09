@@ -46,7 +46,7 @@ When this is called using python score_model.py in the command line, this will i
 
 3. Critical Thinking (2 points total)
 Modify this ReadMe file to answer the following questions directly in place.
-1) Kaggle changes links/ file locations/login process/ file content
-2) We run out of space on HD / local permissions issue - can't save files
-3) Someone updated python packages and there is unintended effect (functions retired or act differently)
-4) Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
+	1) Kaggle changes links/ file locations/login process/ file content
+	2) We run out of space on HD / local permissions issue - can't save files
+	3) Someone updated python packages and there is unintended effect (functions retired or act differently)
+	4) Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
