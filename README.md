@@ -2,7 +2,7 @@ DATA 622 # hw2
 
 	Assigned on September 27, 2018
 	Due on October 17, 2018 11:59 PM EST
-15 points possible, worth 15% of your final grade
+	15 points possible, worth 15% of your final grade
 
 1. Required Reading
 
@@ -11,26 +11,27 @@ DATA 622 # hw2
 
 2. Data Pipeline using Python (13 points total)
 
-Build a data pipeline in Python that downloads data using the urls given below, trains a random forest model on the training dataset using sklearn and scores the model on the test dataset.
+	Build a data pipeline in Python that downloads data using the urls given below, trains a random forest model on the training dataset using sklearn and scores the model on the test dataset.
 
-Scoring Rubric
+	Scoring Rubric
 
-The homework will be scored based on code efficiency (hint: use functions, not stream of consciousness coding), code cleaniless, code reproducibility, and critical thinking (hint: commenting lets me know what you are thinking!)
+	The homework will be scored based on code efficiency (hint: use functions, not stream of consciousness coding), code cleaniless, code reproducibility, and critical thinking (hint: commenting lets me know what you are thinking!)
 Instructions:
 
-Submit the following 5 items on github.
+	Submit the following 5 items on github.
 
-ReadMe.md (see "Critical Thinking")
+	ReadMe.md (see "Critical Thinking")
 
-requirements.txt
+	requirements.txt
 
-pull_data.py
+	pull_data.py
 
-train_model.py
+	train_model.py
 
-score_model.py
+	score_model.py
 
 More details:
+
 requirements.txt (1 point)
 This file documents all dependencies needed on top of the existing packages in the Docker Dataquest image from HW1. When called upon using pip install -r requirements.txt , this will install all python packages needed to run the .py files. (hint: use pip freeze to generate the .txt file)
 
