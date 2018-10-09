@@ -4,12 +4,12 @@ DATA 622 # hw2
 	Due on October 17, 2018 11:59 PM EST
 15 points possible, worth 15% of your final grade
 
-Required Reading
+1. Required Reading
 
 	Read Chapter 5 of the Deep Learning Book
 	Read Chapter 1 of the Agile Data Science 2.0 textbook
 
-Data Pipeline using Python (13 points total)
+2. Data Pipeline using Python (13 points total)
 
 Build a data pipeline in Python that downloads data using the urls given below, trains a random forest model on the training dataset using sklearn and scores the model on the test dataset.
 
@@ -48,9 +48,9 @@ eda.ipynb (0 points)
 score_model.py (2 points)
 When this is called using python score_model.py in the command line, this will ingest the .pkl random forest file and apply the model to the locally saved scoring dataset csv. There must be data check steps and clear commenting for each step inside the .py file. The output for running this file is a csv file with the predicted score, as well as a png or text file output that contains the model accuracy report (e.g. sklearn's classification report or any other way of model evaluation).
 
-Critical Thinking (2 points total)
+3. Critical Thinking (2 points total)
 Modify this ReadMe file to answer the following questions directly in place.
-1. Kaggle changes links/ file locations/login process/ file content
-2. We run out of space on HD / local permissions issue - can't save files
-3. Someone updated python packages and there is unintended effect (functions retired or act differently)
-4. Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
+1) Kaggle changes links/ file locations/login process/ file content
+2) We run out of space on HD / local permissions issue - can't save files
+3) Someone updated python packages and there is unintended effect (functions retired or act differently)
+4) Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
