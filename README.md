@@ -32,8 +32,8 @@ This file documents all dependencies needed on top of the existing packages in t
 
 pull_data.py (5 points)
 When this is called using python pull_data.py in the command line, this will go to the 2 Kaggle urls provided below, authenticate using your own Kaggle sign on, pull the two datasets, and save as .csv files in the current local directory. The authentication login details (aka secrets) need to be in a hidden folder (hint: use .gitignore). There must be a data check step to ensure the data has been pulled correctly and clear commenting and documentation for each step inside the .py file.
-Training dataset url: https://www.kaggle.com/c/titanic/download/train.csv
-Scoring dataset url: https://www.kaggle.com/c/titanic/download/test.csv
+	Training dataset url: https://www.kaggle.com/c/titanic/download/train.csv
+	Scoring dataset url: https://www.kaggle.com/c/titanic/download/test.csv
 
 train_model.py (5 points)
 When this is called using python train_model.py in the command line, this will take in the training dataset csv, perform the necessary data cleaning and imputation, and fit a classification model to the dependent Y. There must be data check steps and clear commenting for each step inside the .py file. The output for running this file is the random forest model saved as a .pkl file in the local directory. Remember that the thought process and decision for why you chose the final model must be clearly documented in this section.
