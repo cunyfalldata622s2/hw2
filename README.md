@@ -21,9 +21,13 @@ Instructions:
 Submit the following 5 items on github.
 
 ReadMe.md (see "Critical Thinking")
+
 requirements.txt
+
 pull_data.py
+
 train_model.py
+
 score_model.py
 
 More details:
@@ -46,18 +50,7 @@ When this is called using python score_model.py in the command line, this will i
 
 Critical Thinking (2 points total)
 Modify this ReadMe file to answer the following questions directly in place.
-I would put in checks to make sure the number of columns and the data types match the format so that the processes that wrangles the data later on before running ml part does not break. Maybe add a check of file to make sure it is not corrupt and is readable after the merge(Not sure how much of a problem this actually is, but this would not hurt). Also the way my scripts work right now, is I have statically specified where the NaN values are and I am handling them per case, since we do not know what data we will get, a more robust method of detecting and dealing with NaN values will be needed.
-
-Kaggle changes links/ file locations/login process/ file content
-We run out of space on HD / local permissions issue - can't save files
-
-Someone updated python packages and there is unintended effect (functions retired or act differently)
-Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
-
-We would need some kind of back engine like Hadoop or Spark to handle the data. Also we will need ability to process data in chunks, data pull would need to be done in chunks, with further checks, processing in chunks and so on, also I would probably separate pipeline into more steps(scripts), for example I would take all the data wrangling parts into a separate scripts. If we have too much data to process we can't have multiple steps run at the same time as each one of those steps will be cpu and time consuming, so each step will have to be separated with more reporting/logging added in between each step. Trillion records sounds like a lot, so I would probably put some effort into monitoring of resources during the time my jobs run, With trillion records something will break sooner or later and if we have good overview of systems performance it will help with troubleshooting a lot.
-
-I would add a cron job to check for differences daily, something like an rsync should get the job done, by checking if there is a change and pulling only the differences. Also if there is daily processing we will preferably need a more complex dependency based system where you check if last days jobs have completed successfully before moving on to the next day Same goes for steps within a day each one depends on completion of the other not just time based cron jobs. Alerts ( email/texts) will be critical to have in place, they will be notifying successful completion of jobs or alert about a problem.
-
-Please make sure you press enter when running last script, The output was pretty odd inside my docker container so I show part of output then, you hit enter then script will output the rest.
-
-Also, if you use the wrong login/pass, you will have to delete login file. If file exists, it will just use whatever is in the file.
+1. Kaggle changes links/ file locations/login process/ file content
+2. We run out of space on HD / local permissions issue - can't save files
+3. Someone updated python packages and there is unintended effect (functions retired or act differently)
+4. Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
