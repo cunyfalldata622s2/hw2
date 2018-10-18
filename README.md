@@ -47,6 +47,14 @@ When this is called using python score_model.py in the command line, this will i
 3. Critical Thinking (2 points total)
 Modify this ReadMe file to answer the following questions directly in place.
 	1) Kaggle changes links/ file locations/login process/ file content
+	Ans: Kaggle changes the file download process that it requires to authentication.  Install Kaggle API and use Python shell to login and download instead of direct download
 	2) We run out of space on HD / local permissions issue - can't save files
+	Ans: For run out of space, we can consider to save the files on cloud or adjusts the hard drive size if it is using virtual machine.  For local permission issue such as during software installation, we need to login as admin user first; Window user can Right click and choose “Run as Administrator” to grant software to have write access.
 	3) Someone updated python packages and there is unintended effect (functions retired or act differently)
+	Ans: 3.	We may use to Pip command to install python package with specific version.  Pip command can be used for upgrade and downgrade. For example: 
+		pip uninstall werkzeug
+		pip install --upgrade werkzeug==0.12.2
+
 	4) Docker issues - lost internet within docker due to some ip binding to vm or local routing issues( I guess this falls under lost internet, but I am talking more if docker is the cause rather then ISP)
+	Ans: 4.	Docker may need to grant specific port number.  For example, MangoDB requires docker to expose the port 27017 for any incoming access from the network. E.g. run the following command can expose the port in docker. 
+		docker run --name my_mongo -d -p 27017:27017 mongo:3.5
